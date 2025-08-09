@@ -6,6 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import br.com.jenifer.airtable.navigation.NavigationWrapper
 import br.com.jenifer.airtable.ui.theme.AirtableTimelineTheme
+import br.com.jenifer.airtable.ui.theme.DarkBlue
+import br.com.jenifer.airtable.ui.widget.StatusBarColor
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -15,6 +17,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AirtableTimelineTheme {
+                StatusBarColor(color = DarkBlue, darkIcons = true)
                 NavigationWrapper()
             }
         }

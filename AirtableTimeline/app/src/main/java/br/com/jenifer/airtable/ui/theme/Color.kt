@@ -15,7 +15,7 @@ val CardContainerTeal = Color(0xFF1AB1C9)
 val CardContainerOrange = Color(0xFFF5A623)
 val CardContainerRed = Color(0xFFEB5757)
 val CardContainerPurple = Color(0xFF9B59B6)
-val CardContainerDarkBlue = Color(0xFF2F4F6F)
+val DarkBlue = Color(0xFF2F4F6F)
 val CardContainerLightBlue = Color(0xFF56CCF2)
 val CardContainerYellow = Color(0xFFF2C94C)
 

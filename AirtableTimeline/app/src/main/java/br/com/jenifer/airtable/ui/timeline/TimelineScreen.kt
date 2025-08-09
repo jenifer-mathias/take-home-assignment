@@ -35,7 +35,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import br.com.jenifer.airtable.data.model.Event
-import br.com.jenifer.airtable.ui.theme.CardContainerDarkBlue
+import br.com.jenifer.airtable.ui.theme.DarkBlue
 import br.com.jenifer.airtable.ui.theme.CardContainerGreen
 import br.com.jenifer.airtable.ui.theme.CardContainerLightBlue
 import br.com.jenifer.airtable.ui.theme.CardContainerOrange
@@ -125,7 +125,7 @@ fun Lane(events: List<Event>) {
                 CardContainerOrange,
                 CardContainerRed,
                 CardContainerPurple,
-                CardContainerDarkBlue,
+                DarkBlue,
                 CardContainerLightBlue,
                 CardContainerYellow
             )
