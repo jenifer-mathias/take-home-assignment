@@ -1,54 +1,45 @@
-[//]: # (Inclua um arquivo README que aborde:)
-[//]: # (Quanto tempo você gastou para fazer o desafio.)
-[//]: # (O que você gostou na sua implementação.)
-[//]: # (O que mudaria se fosse fazer novamente.)
-[//]: # (Como você tomou suas decisões de design. Por exemplo, se você se inspirou em outras timelines, mencione isso.)
-[//]: # (Como você testaria seu app se tivesse mais tempo.)
-[//]: # (Instruções especiais sobre como construir/rodar seu app.)
+# Timeline App - README
 
-[//]: # (Melhorias:)
-[//]: # (Depois de ter uma versão básica da timeline somente leitura, aqui estão algumas melhorias opcionais para você tentar:)
-[//]: # (Permitir edição dos eventos.)
-[//]: # (Permitir zoom in e zoom out da timeline.)
-[//]: # (Permitir arrastar e soltar para alterar a data de início e/ou término dos eventos.)
-[//]: # (Qualquer outro polimento ou aprimoramento útil que você pensar.)
+## How long you spent on the assignment
 
-- How long you spent on the assignment.
-  I spent approximately 4 hours completing this challenge, focusing on designing a clean and maintainable timeline visualization.
+I spent 4 hours completing this challenge, focusing on designing a clean and maintainable timeline
+visualization.
 
-- What you like about your implementation.
-I enjoyed with the modular architecture following Clean Architecture principles combined with an MVI pattern, which provides clear separation of concerns and testability. The timeline arranges events in compact lanes with proportional sizing based on event duration. The UI supports zooming for better user experience. Furthermore, using this architecture is recommended to work with Compose.
+## What you like about your implementation
 
-- What you would change if you were going to do it again.
-I would like remove data mocks and integrate with backend to leave the frontend only responsible for handling requests and showing the results to the user and to maintain grater security in the app;
-I would add more tests, like instrumented tests.
+- **Architecture:** I liked working with a modular architecture following Clean Architecture
+  principles combined with an MVI pattern, which provides clear separation of concerns and good
+  testability. The timeline arranges events in compact lanes with sizes proportional to event
+  duration. The UI supports zooming for a better user experience. This architecture is well-suited
+  for working with Compose.
+- **Navigation:** I created a centralized navigation scheme to facilitate managing and finding all
+  screens.
+- **Dependency Injection:** I chose Hilt because it is officially supported by Google, easy to set
+  up, and performs well due to code generation.
+- **Testing** I used MockK as the mocking framework for unit tests. MockK is a modern and powerful
+  Kotlin library that simplifies creating clear and effective mocks, especially useful for testing
+  coroutines and interface-based dependencies.  
+  This choice enabled isolated testing of the repository, use case, and view model layers, ensuring
+  the application logic works correctly without
 
-- How you made your design decisions. For example, if you looked at other timelines for inspiration, please note that.
-- How you would test this if you had more time.
-- Any special instructions on how to build/run your app.
+## What you would change if you were to do it again
 
+- I would remove the data mocks and integrate with a backend, leaving the frontend responsible only
+  for handling requests and displaying results, improving the app’s security.
+- Add new features.
+- Improve the layout and arrangement of items on the screen for a better visual experience.
 
-- I'm using Java 11 because is stablish for Jetpack Compose;
-- 
-- I changed Date because is deprecated in Java and I created an Utils file to instance a Calendar
+## How you made your design decisions
 
-compileOptions {
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
-}
-kotlinOptions {
-jvmTarget = "11"
-}
+I based my design on common timeline implementations and best practices in Android development,
+aiming for simplicity, readability, and modularity.
 
-- I created a navigation scheme to manage the navigation, centralizing all navigation to facilitate
-  find the classes.
+## How you would test this if you had more time
 
-### DI
+- Add more unit tests.
+- Add instrumented tests.
+- Increase code coverage to around 80% or more.
 
-I choose Hilt to Dependency Injection, because this tool has official support by Google, is more
-simple to setting and the performance is high, because uses code generation.
+## Any special instructions on how to build/run your app
 
-### Points for improvement
-
-- Remove mock Events and integrate the timeline with backend data
-
+- Requires Android API level 24 or higher.
