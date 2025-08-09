@@ -12,14 +12,16 @@ visualization.
   testability. The timeline arranges events in compact lanes with sizes proportional to event
   duration. The UI supports zooming for a better user experience. This architecture is well-suited
   for working with Compose.
+  
 - **Navigation:** I created a centralized navigation scheme to facilitate managing and finding all
   screens.
+  
 - **Dependency Injection:** I chose Hilt because it is officially supported by Google, easy to set
   up, and performs well due to code generation.
+  
 - **Testing** I used MockK as the mocking framework for unit tests. MockK is a modern and powerful
   Kotlin library that simplifies creating clear and effective mocks, especially useful for testing
-  coroutines and interface-based dependencies.  
-  This choice enabled isolated testing of the repository, use case, and view model layers, ensuring
+  coroutines and interface-based dependencies. This choice enabled isolated testing of the repository, use case, and view model layers, ensuring
   the application logic works correctly without
 
 ## What you would change if you were to do it again
