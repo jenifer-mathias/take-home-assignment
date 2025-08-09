@@ -32,7 +32,7 @@ visualization.
 ## How you made your design decisions
 
 I based my design on common timeline implementations and best practices in Android development,
-aiming for simplicity, readability, and modularity.
+aiming for simplicity, readability, and modularity. The color palette was inspired by Airtable's brand colors to give the app a vibrant and consistent look.
 
 ## How you would test this if you had more time
 
@@ -43,3 +43,19 @@ aiming for simplicity, readability, and modularity.
 ## Any special instructions on how to build/run your app
 
 - Requires Android API level 24 or higher.
+
+
+## Screenshots
+
+### Basic Timeline
+### Basic Timeline
+![Timeline](assets/timeline.png)
+
+### Timeline with Random Colors
+![Timeline Random Colors](assets/timeline_random_colors.png)
+
+### Zoom In
+![Zoom In](assets/timeline_zoom_in.png)
+
+### Zoom Out
+![Zoom Out](assets/timeline_zoom_out.png)
