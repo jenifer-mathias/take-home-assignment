@@ -48,14 +48,13 @@ aiming for simplicity, readability, and modularity. The color palette was inspir
 ## Screenshots
 
 ### Basic Timeline
-### Basic Timeline
-![Timeline](assets/timeline.png)
+<img src="assets/timeline.png" width="300"/>
 
 ### Timeline with Random Colors
-![Timeline Random Colors](assets/timeline_random_colors.png)
+<img src="assets/timeline_random_colors.png" width="300"/>
 
 ### Zoom In
-![Zoom In](assets/timeline_zoom_in.png)
+<img src="assets/timeline_zoom_in.png" width="300"/>
 
 ### Zoom Out
-![Zoom Out](assets/timeline_zoom_out.png)
+<img src="assets/timeline_zoom_out.png" width="300"/>
